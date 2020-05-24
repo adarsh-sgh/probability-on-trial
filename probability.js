@@ -16,14 +16,3 @@ console.log(ank)
 
 diceShows = Number(prompt('Digit(s) you want to track on your dice'));
 document.getElementById("a").innerHTML=(dice(diceShows))
-//this code is not on use currently,was a similar function for coin but simple bcz of just 2 arguments
-/*function coin(){randomInteger(1);
-    let head=0;
-    let tail=0;
-    for (let trial = 0; trial < trialsRequested; trial++) {
- if(randomInteger=0){head++}
-else{tail++}
-return `out of ${trialsRequested} flips we have got ${head} heads and ${tail} tails.
-so ${(head/trialsRequested)*100}% times it was head and remaining ${(tail/trialsRequested)*100}% times tail flipped up. `
-}
-}*/
