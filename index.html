@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <title>Probability on trial.</title>
 <style></style>
+<head><link rel="stylesheet" type="text/css" href="probability.css"></head>
 <body>
-    <button><a onclick="diceShows()">Roll the <strong>Dice</strong>.</a><br></button>
-   <button> <a onclick="coinOutput()">Flips the<strong>Coin</strong> .</a></button>
+    <button onclick="diceShows()" >Roll the <strong>Dice</strong>.</button><br><br>
+   <button onclick="coinOutput()">Flip the<strong>Coin</strong> .</button>
         <p id="a"></p>
+        <p id="warning"></p><hr>
+        
+        <label for="trialRequested">Trials to be performed</label>
+         <input type ="number" id="trialRequested" value="100" onchange="setTrial()">
     <script src="probability.js"></script>
 </body>
