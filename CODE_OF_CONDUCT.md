@@ -1,3 +1,6 @@
+AS much i have known developers this is the most useless document of any project; we're already a group of warmhearted & empathetic group.
+Treat others as you want to be treated yourself.
+Trust me, making someone feel good gives you more joy than harassing or bullying someone.
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
