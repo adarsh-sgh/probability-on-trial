@@ -3,12 +3,18 @@
 <style></style>
 <head><link rel="stylesheet" type="text/css" href="probability.css"></head>
 <body>
-    <button onclick="diceShows()" >Roll the <strong>Dice</strong>.</button><br><br>
-   <button onclick="coinOutput()">Flip the<strong>Coin</strong> .</button>
-        <p id="a"></p>
+    <button onclick="coinShow()">Flip the<strong>Coin</strong> .</button><br><br>
+    <button onclick="diceShows()" >Roll the <strong>Dice</strong>.</button>
+
+        <p id="a"><strong>Select flip the coin to flip the coin 100 times and see the result.<br>
+            or select Roll the dice & then choose a number (1 to 6) which you want to track on your dice.</strong></p>
         <p id="warning"></p><hr>
         
         <label for="trialRequested">Trials to be performed</label>
-         <input type ="number" id="trialRequested" value="100" onchange="setTrial()">
+         <input type ="number" id="trialRequested" value="100" onchange="setTrial()"><hr>
+
+         <button onclick="coinUse()">Use <strong>Coin</strong> .</button>
+               <p id="coinResult">Could be used for tosses like between captains in cricket</p><br>
+         <button onclick="diceUse()" >Use <strong>Dice</strong>.</button><p id="diceResult">Can be used in any dice game (e.g. LUDO) </p>
     <script src="probability.js"></script>
 </body>
