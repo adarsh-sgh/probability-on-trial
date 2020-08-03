@@ -1,1 +1,10 @@
 #warning{color:rgb(233, 36, 36)}
+button{
+    background-color: rgb(255 131 131 / .6);
+    border-color: red;
+    box-shadow: 8px -2px 12px 1px red;
+    border-right-width: thick;
+    border-left-width: thin;
+    border-bottom-width: thin;
+    border-top-width: medium;
+}
