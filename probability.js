@@ -5,7 +5,7 @@ function dice(...ank) {
   let success = 0;
   for (let trial = 0; trial < trialsRequested; trial++) {
     if (ank.includes(randomInteger(5) + 1)) {
-      success++;console.log(ank)
+      success++;
     } //get a random integer 1-6 check if we got a number of the list we are looking
 
   }
@@ -42,19 +42,22 @@ function coinShow() {
 }
 
 function setTrial() {
-  trialsRequested = document.getElementById("trialRequested").value || 100
+  trialsRequested = document.getElementById("trialRequested").value || 100;
+  document.getElementById("a").innerHTML=`trials to be performed changed successfully to ${trialsRequested}`
 }
 function diceUse(){
   document.getElementById("diceResult").innerHTML="DICE IS ROLLING";
   setTimeout(() => {
-    document.getElementById("diceResult").innerHTML=`DICE SHOWS : ${randomInteger(5)+1}`
+    let result=randomInteger(5)+1
+    document.getElementById("diceResult").innerHTML=`DICE SHOWS : ${result}`
+    document.getElementById("diceface").setAttribute("src",`dicefaces/dice${result}.png`)
   }, 1500);
 }
 function coinUse(){document.getElementById("coinResult").innerHTML="Coin Is In the Air";
 setTimeout(() => { if(Math.random()<.5){document.getElementById("coinResult").innerHTML="It's a Head"}
 else{document.getElementById("coinResult").innerHTML="It's a Tail"}
   
-}, 2000);
+}, 1000);
  }
 
 function randomInteger(n) {
