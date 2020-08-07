@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <title>Probability on trial.</title>
-<style></style>
+<link rel="icon" href="Dice.ico" type="image/x-icon" >
 <head><link rel="stylesheet" type="text/css" href="probability.css"></head>
 <body>
     <button onclick="coinShow()">Flip the<strong>Coin</strong> .</button><br><br>
@@ -14,7 +14,9 @@
          <input type ="number" id="trialRequested" value="100" onchange="setTrial()"><hr>
 
          <button onclick="coinUse()">Use <strong>Coin</strong> .</button>
-               <p id="coinResult">Could be used for tosses like between captains in cricket</p><br>
+               <p id="coinResult">Could be used for tosses like between captains in cricket</p>
+               <img id="diceface" src="dice.png" style="widows: 48px;height: 49px; ;"><br>
+
          <button onclick="diceUse()" >Use <strong>Dice</strong>.</button><p id="diceResult">Can be used in any dice game (e.g. LUDO) </p>
     <script src="probability.js"></script>
 </body>
