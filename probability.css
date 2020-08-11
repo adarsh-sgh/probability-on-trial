@@ -1,6 +1,7 @@
 #warning{color:rgb(233, 36, 36)}
 button{
     background-color: rgb(255 131 131 / .6);
+    /* box-shadow: 0 0 7px 3px red; */
     border-color: red;
     box-shadow: 8px -2px 12px 1px red;
     border-right-width: thick;
@@ -8,3 +9,7 @@ button{
     border-bottom-width: thin;
     border-top-width: medium;
 }
+.footer{ padding-right: 2%;font-size: smaller;background-color:aliceblue;}
+#welcome{font-size: 200%;
+font-family: 'Courier New', Courier, monospace;
+color: green;}

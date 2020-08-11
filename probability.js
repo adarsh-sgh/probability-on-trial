@@ -47,16 +47,23 @@ function setTrial() {
 }
 function diceUse(){
   document.getElementById("diceResult").innerHTML="DICE IS ROLLING";
+  document.getElementById("diceUse").disabled=true
   setTimeout(() => {
-    let result=randomInteger(5)+1
-    document.getElementById("diceResult").innerHTML=`DICE SHOWS : ${result}`
-    document.getElementById("diceface").setAttribute("src",`dicefaces/dice${result}.png`)
+    showDiceResult();
+    document.getElementById("diceUse").disabled=false
   }, 1500);
+
+  function showDiceResult() {
+    let result = randomInteger(5) + 1;
+    document.getElementById("diceResult").innerHTML = `DICE SHOWS : ${result}`;
+    document.getElementById("diceface").setAttribute("src", `dicefaces/dice${result}.png`);
+  }
 }
 function coinUse(){document.getElementById("coinResult").innerHTML="Coin Is In the Air";
+document.getElementById("coinUse").disabled=true;
 setTimeout(() => { if(Math.random()<.5){document.getElementById("coinResult").innerHTML="It's a Head"}
 else{document.getElementById("coinResult").innerHTML="It's a Tail"}
-  
+document.getElementById("coinUse").disabled=false
 }, 1000);
  }
 
