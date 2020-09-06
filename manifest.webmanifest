@@ -1,0 +1,22 @@
+{
+    "theme_color": " #ff7a0e",
+    "background_color": " #ff7a0e",
+    "display": "minimal-ui",
+    "scope": "/",
+    "start_url": "/probability-on-trial/index.html",
+    "name": "Probability On Trial",
+    "short_name": "Probability",
+    "description": "Let's put probability on trial by simulating famous dice and coin experiments and comparing our result with expectation from probability",
+    "icons": [
+        {
+            "src": "dice.png",
+            "sizes": "800x800",
+            "type": "image/png"
+        },
+        {
+            "src": "dice 192 192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
