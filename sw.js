@@ -1,7 +1,7 @@
 const cacheName = 'v1';
 
 const cacheAssets = [
-  'index.html','probability.js'
+  'index.html','probability.js','probability.css'
 ];
 
 // Call Install Event
