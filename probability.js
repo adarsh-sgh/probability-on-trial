@@ -1,10 +1,10 @@
 let trialsRequested = 100;
 
 
-function dice(...ank) {
+function dice(ank) {
   let success = 0;
   for (let trial = 0; trial < trialsRequested; trial++) {
-    if (ank.includes(randomInteger(5) + 1)) {
+    if (ank.includes(`${randomInteger(5) + 1}`)) {
       success++;
     } //get a random integer 1-6 check if we got a number of the list we are looking
 
@@ -15,10 +15,10 @@ function dice(...ank) {
 }
 
 function diceShows() {
-  let numberTracked = Number(prompt('Digit(s) you want to track on your dice [1-6]'));
-  if (!(numberTracked < 7 && numberTracked > 0 && Number.isInteger(numberTracked))) {
-    document.getElementById("warning").innerHTML = "This dice will only show Natural numbers 1 to 6 ";
-  }
+  let numberTracked = ((prompt('Digit(s) you want to track on your dice [1-6]')).split(","));
+  // if (!(numberTracked < 7 && numberTracked > 0 && Number.isInteger(numberTracked))) {
+  //   document.getElementById("warning").innerHTML = "This dice will only show Natural numbers 1 to 6 ";
+  // }
   document.getElementById("a").innerHTML = (dice(numberTracked))
 }
 
